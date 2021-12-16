@@ -26,8 +26,8 @@
   font-weight: 600;
   text-transform: uppercase;
 }
-.nav-item:hover {
-  border: 3px solid rgb(144, 228, 10);
+.nav-link:hover {
+  color: skyblue !important;
 }
 
 .dropdown-item a {
@@ -37,7 +37,53 @@
   text-transform: uppercase;
 }
 .dropdown-item:hover {
-  color: rgb(144, 228, 10);
+  color: skyblue !important;
+}
+.movingTxt {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+/* top searchBox */
+.searchBox {
+  width: 100%;
+  display: inline-block;
+}
+.searchBar {
+  display: inline-block;
+  width: 50%;
+  padding: 5px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 70px 70px 70px 70px;
+  box-shadow: 0 0 5px 0 #1d1d1d;
+  color: dimgray;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+.searchBar:focus {
+  background-color: #ffd9d9;
+  color: black;
+}
+.searchBtn {
+  padding: 2px 7px;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 70px 70px 70px 70px;
+  box-shadow: 0 0 5px 0 #1d1d1d;
+  color: dimgray;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+.searchBtn:hover {
+  background-color: #ffd9d9;
+}
+/* --- */
+.details-btn {
+  background: #69eb85;
 }
 .partTitleCust {
   font-weight: 400;
@@ -112,4 +158,14 @@
 }
 .figure img {
   height: 300px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .dropdown-menu {
+    border: none;
+    background: transparent;
+  }
+  .dropdown-item {
+    font-size: 12px !important;
+  }
 }
